@@ -26,8 +26,8 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-white font-semibold text-lg mb-1">Office Location</h3>
                   <p className="text-slate-400 leading-relaxed">
-                    Tech Innovation Park <br />
-                    Bangalore, India 560001 <br />
+                    Kythera Systems <br />
+                    1st floor timesquare,mallikatte,kadri,Mangalore,Karnataka, India 560001 <br />
                     <em>(Global Remote Operations)</em>
                   </p>
                 </div>
