@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -23,8 +24,11 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-shrink-0">
-            <Link href="/" className="text-xl font-bold tracking-tight text-white hover:text-sky-400 transition-colors">
-              Kythera<span className="text-sky-400">Systems</span>
+            <Link href="/" className="flex items-center space-x-2 group">
+              <Image src="/logo.png" alt="Kythera Systems Logo" width={32} height={32} className="object-contain" />
+              <span className="text-xl font-bold tracking-tight text-white group-hover:text-sky-400 transition-colors">
+                Kythera<span className="text-sky-400">Systems</span>
+              </span>
             </Link>
           </div>
           
