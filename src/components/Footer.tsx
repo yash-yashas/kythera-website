@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, Phone, MapPin, Globe, Share2, MessageSquare } from "lucide-react";
 
 export default function Footer() {
@@ -7,8 +8,8 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-1">
-            <Link href="/" className="text-2xl font-bold tracking-tight text-white mb-4 block">
-              Kythera<span className="text-sky-400">Systems</span>
+            <Link href="/" className="flex items-center mb-6 group">
+              <Image src="/logo.png" alt="Kythera Systems Logo" width={500} height={150} className="w-auto h-16 md:h-20 object-contain object-left scale-[1.3] origin-left" />
             </Link>
             <p className="text-slate-400 mb-6 font-light">
               Kythera Systems – Software, Cloud, Digital & Business Solutions
@@ -28,7 +29,7 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          
+
           <div>
             <h3 className="text-white font-semibold mb-4">Our Services</h3>
             <ul className="space-y-3">
@@ -39,7 +40,7 @@ export default function Footer() {
               <li><Link href="/services" className="text-slate-400 hover:text-sky-400 transition-colors">Cloud Services</Link></li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-3">
@@ -49,7 +50,7 @@ export default function Footer() {
               <li><Link href="/contact" className="text-slate-400 hover:text-sky-400 transition-colors">Contact Us</Link></li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-white font-semibold mb-4">Contact Info</h3>
             <ul className="space-y-3">
@@ -59,16 +60,16 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-sky-400 mr-3 flex-shrink-0" />
-                <span className="text-slate-400">+1 (555) 123-4567</span>
+                <span className="text-slate-400">+91 8088885756</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-sky-400 mr-3 flex-shrink-0" />
-                <span className="text-slate-400">hello@kytherasystems.com</span>
+                <span className="text-slate-400">Info@kytherasystems.com</span>
               </li>
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
           <p>&copy; {new Date().getFullYear()} Kythera Systems. All rights reserved.</p>
           <div className="space-x-4 mt-4 md:mt-0">

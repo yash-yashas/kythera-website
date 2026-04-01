@@ -24,14 +24,11 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center space-x-2 group">
-              <Image src="/logo.png" alt="Kythera Systems Logo" width={32} height={32} className="object-contain" />
-              <span className="text-xl font-bold tracking-tight text-white group-hover:text-sky-400 transition-colors">
-                Kythera<span className="text-sky-400">Systems</span>
-              </span>
+            <Link href="/" className="flex items-center group">
+              <Image src="/logo.png" alt="Kythera Systems Logo" width={1200} height={360} className="w-auto h-14 md:h-16 object-contain object-left scale-[1.3] origin-left" priority />
             </Link>
           </div>
-          
+
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-6">
               {navLinks.map((link) => {
@@ -40,11 +37,10 @@ export default function Navbar() {
                   <Link
                     key={link.name}
                     href={link.href}
-                    className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${
-                      isActive
-                        ? "bg-slate-800 text-white"
-                        : "text-slate-300 hover:bg-slate-800 hover:text-white"
-                    }`}
+                    className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${isActive
+                      ? "bg-slate-800 text-white"
+                      : "text-slate-300 hover:bg-slate-800 hover:text-white"
+                      }`}
                   >
                     {link.name}
                   </Link>
@@ -52,7 +48,7 @@ export default function Navbar() {
               })}
             </div>
           </div>
-          
+
           <div className="hidden md:flex items-center space-x-4">
             {/* Action buttons can go here */}
           </div>
@@ -86,11 +82,10 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`block rounded-md px-3 py-2 text-base font-medium ${
-                    isActive
-                      ? "bg-slate-800 text-white"
-                      : "text-slate-300 hover:bg-slate-800 hover:text-white"
-                  }`}
+                  className={`block rounded-md px-3 py-2 text-base font-medium ${isActive
+                    ? "bg-slate-800 text-white"
+                    : "text-slate-300 hover:bg-slate-800 hover:text-white"
+                    }`}
                 >
                   {link.name}
                 </Link>
